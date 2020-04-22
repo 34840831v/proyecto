@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo2"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:id="@+id/linear1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/administrar"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/boton_redondeado"
+        android:text="@string/administrar"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/nuevo"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@drawable/boton_redondeado"
+        android:text="@string/limpiar"
+        app:backgroundTint="@color/colorAccent" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linear7"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/linear1"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+      android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtUsu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:background="#FDFBFC"
+        android:textColor="#060606"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/accion"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:gravity="center"
+        android:focusable="false"
+        android:ems="20"
+        android:inputType="text"
+        android:textColor="#3377FF"
+        android:textSize="15dp"></EditText>
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linear8"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/linear7"
+      android:layout_centerHorizontal="true"
+      android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="@string/id"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="#FAAC58"
+        android:textSize="20dp"></EditText>
+
+  </LinearLayout>
+
+
+
+  <EditText
+      android:id="@+id/nombre"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/linear8"
+      android:hint="Nombre del lugar"
+      android:ems="20"
+      android:inputType="text"
+      android:textColor="#FAAC58">
+
+  </EditText>
+
+  <EditText
+      android:id="@+id/direccion"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/nombre"
+      android:hint="Dirección del lugar"
+      android:ems="40"
+      android:inputType="text"
+      android:textColor="#FAAC58" />
+
+
+
+  <LinearLayout
+      android:id="@+id/linear3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/direccion"
+      android:layout_marginBottom="0dp"
+      android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/ubic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ubicación"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="20"
+        android:textColor="#FAAC58" />
+
+    <Button
+        android:id="@+id/butGeocode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:enabled="true"
+        android:onClick="onClickGeocode"
+        android:text="@string/geocode"
+        app:backgroundTint="@color/colorPrimary" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linear4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/linear3"
+      android:layout_marginBottom="0dp"
+      android:orientation="horizontal">
+
+
+
+  </LinearLayout>
+
+  <EditText
+      android:id="@+id/web"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/linear4"
+      android:hint="Web"
+      android:inputType="text"
+      android:maxLength="100"
+      android:textColor="#FAAC58" />
+
+  <Button
+      android:id="@+id/butWeb"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentRight="true"
+      android:layout_below="@id/web"
+      android:enabled="true"
+      android:onClick="onClickValidarWeb"
+      android:text="@string/botonweb"
+      app:backgroundTint="@color/colorPrimary" />
+
+  <EditText
+      android:id="@+id/tlf"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/butWeb"
+      android:hint="Teléfono"
+      android:ems="40"
+      android:inputType="number"
+      android:textColor="#FAAC58" />
+
+  <LinearLayout
+      android:id="@+id/line1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tlf"
+      android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtTipo"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tipo"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/tipo"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:hint="Tipo"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#FAAC58" />
+
+      <Spinner
+          android:id="@+id/sCategoria"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:backgroundTint="#FAAC58"
+          android:text="@string/sCategoria" />
+
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/line3"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/line1"
+      android:layout_marginTop="20dp">
+
+    <ImageButton
+        android:id="@+id/menos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@android:color/holo_orange_light"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/flecha2" />
+
+    <ImageButton
+        android:id="@+id/mas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@android:color/holo_orange_light"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/flecha1" />
+
+  </LinearLayout>
+
+</RelativeLayout>

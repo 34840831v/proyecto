@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">GUIA_TURISTICA</string>
+    <string name="title_activity_maps">GUIA TURISTICA DE ALMERÍA</string>
+    <string name="title_activity_crud">ADMINISTRAR UBICACIONES</string>
+    <string name="title_activity_Login">INICIAR SESIÓN</string>
+    <string name="title_registrar_usuario">REGISTRAR USUARIO</string>
+    <string name="title_registrar_contraseña">REGISTRAR CONTRASEÑA</string>
+    <string name="title_cargar_imagen">CARGAR IMAGEN</string>
+    <string name="title_datos_establecimiento">INFORMACIÓN</string>
+    <string name="title_comentarios">COMENTARIOS DE:</string>
+
+    <string name="menu_administrar">Administrar tu establecimiento</string>
+    <string name="menu_categorias">Categorias</string>
+    <string name="menu_bar">Bares</string>
+    <string name="menu_restaurante">Restaurantes</string>
+    <string name="menu_cafeteria">Cafeterias</string>
+    <string name="menu_todas">Todas las categorias</string>
+
+    <string name="menu_mostrar">Mostrar todo</string>
+    <string name="menu_buscar_una">Buscar por id</string>
+    <string name="menu_insertar">Insertar</string>
+    <string name="menu_modificar">Modificar</string>
+    <string name="menu_borrar">Eliminar</string>
+
+    <string name="id">ID</string>
+    <string name="usuario">usuario</string>
+    <string name="nombre">Nombre del lugar</string>
+    <string name="direccion">Dirección del lugar</string>
+    <string name="telefono">Teléfono</string>
+    <string name="geocode">Extraer coordenadas</string>
+    <string name="ubic">Ubicacion</string>
+    <string name="botonweb">Validar WEB</string>
+    <string name="tvValidarUsuario">INTRODUZCA USUARIO</string>
+    <string name="tvContraseña">INTRODUZCA CONTRASEÑA</string>
+    <string name="checkBox">Mostrar contraseña</string>
+    <string name="btnRegistrar">REGISTRATE</string>
+    <string name="btnRegister">REGISTRAR</string>
+    <string name="btnValidarUsuario">VALIDAR USUARIO</string>
+    <string name="web">Página WEB</string>
+    <string name="tipo">Tipo</string>
+    <string name="categoria">Categoria</string>
+    <string name="sCategoria">Categoria</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="insertar">Insertar</string>
+    <string name="mostrar">Mostrar</string>
+    <string name="buscar">Buscar</string>
+    <string name="modificar">Modificar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="administrar">Administrar</string>
+    <string name="ubicacion">Ver ubicación</string>
+
+    <string name="btnFoto">Añadir imagen</string>
+    <string name="botonSubir">Subir imagen</string>
+    <string name="botonElegir">Elegir imagen</string>
+
+</resources>

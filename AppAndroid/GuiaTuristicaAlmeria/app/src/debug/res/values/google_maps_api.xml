@@ -1,0 +1,11 @@
+<resources>
+    <!--
+    TODO: Antes de ejecutar su aplicación, necesita una clave API de Google Maps.
+
+    Para obtener una, siga los pasos de este video, y siga las instrucciones:
+
+            https://www.youtube.com/watch?v=-lKHgwEJRkw
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve"
+        translatable="false">AIzaSyCReqBQqduvVLxJ19_ZaHmMEUwkMSaum7I</string>
+</resources>

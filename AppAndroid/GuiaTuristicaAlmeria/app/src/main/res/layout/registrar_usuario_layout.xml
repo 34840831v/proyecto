@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dip"
+    android:background="@drawable/fondo3"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/tvValidarUsuario"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:layout_marginBottom="70dip"
+        android:text="@string/tvValidarUsuario"
+        android:gravity="center"
+        android:textSize="20dip"
+        android:textColor="#0b84aa"/>
+
+    <EditText android:id="@+id/txtUserRegistro"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:hint="Usuario"
+        android:inputType="number" />
+
+
+    <Button android:id="@+id/btnUsuarioValidado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dip"
+        android:background="@drawable/boton_redondeado"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="@string/btnValidarUsuario"
+        android:textColor="?android:attr/textColorHintInverse"
+        app:backgroundTint="?android:attr/textColorHint"/>
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pms.mapasgoogle">
+
+  <!--
+       The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+       Google Maps Android API v2, but you must specify either coarse or fine
+       location permissions for the 'MyLocation' functionality.
+  -->
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+  <!-- permiso de acceso a Internet: es un permiso normal, no peligroso
+      https://developer.android.com/guide/topics/permissions/overview.html#normal-dangerous
+   -->
+  <uses-permission android:name="android.permission.INTERNET"/>
+
+  <uses-permission android:name="android.permission.CALL_PHONE" />
+
+  <application
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:supportsRtl="true"
+      android:usesCleartextTraffic="true"
+      android:theme="@style/Theme.AppCompat">
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_maps_key" />
+
+    <activity
+        android:name=".MapsActivity"
+        android:label="@string/title_activity_maps"
+        android:theme="@style/Widget.AppCompat.ActionBar">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity
+        android:name=".Crud"
+        android:label="@string/title_activity_crud" />
+    <activity
+        android:name=".LoginActivity"
+        android:label="@string/title_activity_Login" />
+    <activity
+        android:name=".RegistrarUsuario"
+        android:label="@string/title_registrar_usuario" />
+    <activity
+        android:name=".RegistrarContraseña"
+        android:label="@string/title_registrar_contraseña" />
+    <activity
+        android:name=".Cargar_imagen"
+        android:label="@string/title_cargar_imagen" />
+    <activity
+        android:name=".Datos_establecimiento"
+        android:label="@string/title_datos_establecimiento" />
+    <activity
+        android:name=".Mostrar_comentarios"
+        android:label="@string/title_comentarios" />
+
+  </application>
+
+</manifest>

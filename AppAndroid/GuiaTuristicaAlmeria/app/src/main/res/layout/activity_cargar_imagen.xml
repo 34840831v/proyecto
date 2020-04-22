@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    tools:context=".Cargar_imagen">
+
+
+
+    <ImageView
+        android:id="@+id/imagenId"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/subir_foto" />
+
+    <Button
+        android:id="@+id/botonElegir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:onClick="onClickElegir"
+        android:text="@string/botonElegir"
+        android:background="@drawable/boton_redondeado"
+        app:backgroundTint="?android:attr/textColorHighlightInverse"/>
+
+    <ImageView
+        android:id="@+id/imagenACargar"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/etNombreFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa un nombre" />
+
+
+    <Button
+        android:id="@+id/botonSubir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:onClick="onClickSubir"
+        android:text="@string/botonSubir"
+        android:background="@drawable/boton_redondeado"
+        app:backgroundTint="?android:attr/textColorHighlightInverse"/>
+
+</LinearLayout>
